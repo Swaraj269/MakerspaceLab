@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "slight";
+  src: url("./fonts/Satoshi-Light.woff2");
+}
+@font-face {
+  font-family: "smedium";
+  src: url("./fonts/Satoshi-Medium.woff2");
+}
+@font-face {
+  font-family: "sregular";
+  src: url("./fonts/Satoshi-Regular.woff2");
+}
+@font-face {
+  font-family: "sbold";
+  src: url("./fonts/Satoshi-Bold.woff2");
+}
+* {
+  font-family: "smedium";
+}
+
+.loader {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  transition: all 0.8s ease-out;
+}
+.navbut {
+  transition: all 0.4s ease-in-out;
+}
+.navbut:hover {
+  background-color: #010101;
+  color: #fefefe;
+}
+
