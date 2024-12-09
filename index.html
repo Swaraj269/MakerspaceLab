@@ -17,34 +17,34 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <div class="loader h-screen w-full fixed z-[1000] bg-[#fefefe]">
+    <div class="loader  h-screen w-full fixed z-[1000] bg-[#fefefe]">
       <div
-        class="loaderplane flex items-center justify-center gap-[1vw] h-full w-full"
+        class="loaderplane flex items-center justify-center gap-[3vw] lg:gap-[1vw] h-full w-full"
       >
-        <div class="imgdiv h-32">
+        <div class="imgdiv h-20 lg:h-32">
           <img
             class="h-full w-full object-cover"
             src="https://upload.wikimedia.org/wikipedia/en/e/e6/NIT_Goa_logo.png"
             alt=""
           />
         </div>
-        <div class="linediv h-28 rounded w-[0.2vw] bg-[#010101]"></div>
+        <div class="linediv h-24 lg:h-28 rounded w-[0.2vw] bg-[#010101]"></div>
         <div
-          class="loadertext flex items-center py-[1vw] overflow-hidden h-32 w-fit"
+          class="loadertext flex items-center py-[1vw] overflow-hidden h-24 lg:h-32 w-[45%] lg:w-fit"
         >
           <div class="texts h-full w-full">
             <div class="firsttext h-full w-full flex items-center">
-              <h1 class="text-5xl leading-[1]">
+              <h1 class="text-2xl lg:text-5xl leading-[1]">
                 National Institute of Technology, Goa
               </h1>
             </div>
             <div class="secondtext h-full w-full flex items-center">
-              <h1 class="text-5xl leading-[1]">
+              <h1 class="text-2xl lg:text-5xl leading-[1]">
                 Department of Mechanical Engineering
               </h1>
             </div>
             <div class="thirdtext h-full w-full flex items-center">
-              <h1 class="text-5xl leading-[1]">
+              <h1 class="text-2xl lg:text-5xl leading-[1]">
                 Proudly Presents the Makerspace Lab
               </h1>
             </div>
@@ -52,28 +52,30 @@
         </div>
       </div>
     </div>
-    <nav class="h-28 w-full fixed top-0 left-0 z-[500] bg-[#fefefe]">
+    <nav class="h-28 lg:h-28 w-full fixed top-0 left-0 z-[500] bg-[#fefefe]">
       <div
-        class="navplane px-[3vw] h-full justify-between w-full items-center flex"
+        class="navplane px-[4vw] lg:px-[3vw] h-full justify-between w-full items-center flex"
       >
-        <div class="logophoto h-[70%]">
+        <div class="logophoto h-[51%] lg:h-[70%]">
           <img
-            class="h-full w-full"
+            class="h-full w-full object-cover"
             src="https://www.nitgoa.ac.in/static/logo_color_5.png"
             alt=""
           />
         </div>
         <div class="navbutton">
           <div
-            class="navbut active:scale-[0.99] cursor-pointer px-[2.5vw] py-[0.7vw] border-[1px] border-[#010101]"
+            class="navbut hidden lg:block active:scale-[0.99] cursor-pointer px-[2.5vw] py-[0.7vw] border-[1px] border-[#010101]"
           >
-            <h1 class="text-sm">Read Full Brochure</h1>
+            <h1 class="lg:text-sm">Read Full Brochure</h1>
           </div>
         </div>
       </div>
     </nav>
     <div class="main min-h-screen w-full">
-      <div class="page1 h-[3000vh] w-full bg-[#010101] relative top-0 left-0">
+      <div
+        class="page1 h-[1500vh] lg:h-[3800vh] w-full bg-[#010101] relative top-0 left-0"
+      >
         <div
           class="parent overflow-x-hidden h-screen w-full sticky top-0 left-0"
         >
@@ -81,13 +83,15 @@
             <img src="./Images/ezgif-frame-001.jpg" alt="" />
           </canvas>
           <div
-            class="whitediv flex px-[5vw] flex-col justify-center gap-[2vw] opacity-0 translate-x-[-100%] absolute top-0 left-0 z-[4] h-full w-[40%] bg-[#fefefe]"
+            class="whitediv flex px-[4.4vw] flex-col justify-center gap-[6vw] lg:gap-[2vw] opacity-0 translate-x-[-100%] absolute rounded top-[10%] lg:top-0 left-0 z-[4] h-[50%] lg:h-full w-[70%] lg:w-[40%] bg-[#fefefe]"
           >
             <div class="cardtitle">
-              <h1 class="text-4xl">Julia Advanced (Fracktal work)</h1>
+              <h1 class="text-4xl lg:text-4xl">
+                Julia Advanced (Fracktal work)
+              </h1>
             </div>
             <div class="carddesc">
-              <h3>
+              <h3 class="lg:text-lg text-sm">
                 The Julia Advanced 3D Printer, developed by Fracktal Works, is a
                 professional-grade 3D printer designed for versatility,
                 reliability, and ease of use. The printer offers automatic
@@ -101,17 +105,17 @@
             <div
               class="cardbutton cursor-pointer active:scale-[0.98] w-fit px-[2vw] hover:bg-black hover:text-white py-[0.5vw] border-black border-[2px]"
             >
-              <h3>More Info</h3>
+              <h3 class="text-lg lg:text-md">More Info</h3>
             </div>
           </div>
           <div
-            class="whitediv1 flex px-[5vw] flex-col justify-center gap-[2vw] opacity-0 translate-x-[-100%] absolute top-0 left-0 z-[4] h-full w-[40%] bg-[#fefefe]"
+            class="whitediv1 flex px-[4.4vw] flex-col justify-center gap-[6vw] lg:gap-[2vw] opacity-0 translate-x-[-100%] absolute rounded top-[10%] lg:top-0 left-0 z-[4] h-[50%] lg:h-full w-[70%] lg:w-[40%] bg-[#fefefe]"
           >
             <div class="cardtitle">
-              <h1 class="text-4xl">Original Prusa XL</h1>
+              <h1 class="text-4xl lg:text-4xl">Original Prusa XL</h1>
             </div>
             <div class="carddesc">
-              <h3>
+              <h3 class="lg:text-lg text-sm">
                 The Original Prusa XL is a large-format FFF 3D printer with a
                 360 x 360 x 360 mm build area. Available with one or five heads,
                 it supports efficient dual-material and multicolor printing
@@ -127,13 +131,13 @@
             </div>
           </div>
           <div
-            class="whitediv2 flex px-[5vw] flex-col justify-center gap-[2vw] opacity-0 translate-x-[-100%] absolute top-0 left-0 z-[4] h-full w-[40%] bg-[#fefefe]"
+            class="whitediv2 flex px-[4.4vw] flex-col justify-center gap-[6vw] lg:gap-[2vw] opacity-0 translate-x-[-100%] absolute rounded top-[10%] lg:top-0 left-0 z-[4] h-[50%] lg:h-full w-[70%] lg:w-[40%] bg-[#fefefe]"
           >
             <div class="cardtitle">
-              <h1 class="text-4xl">FormBox Vacuum Forming mc</h1>
+              <h1 class="text-4xl lg:text-4xl">FormBox Vacuum Forming mc</h1>
             </div>
             <div class="carddesc">
-              <h3>
+              <h3 class="lg:text-lg text-sm">
                 The FormBox uses a high-airflow steel mesh and any home vacuum
                 cleaner to generate industrial-grade suction. This powerful
                 system molds sheets with precision, capturing intricate crevices
@@ -149,13 +153,15 @@
             </div>
           </div>
           <div
-            class="whitediv3 flex px-[5vw] flex-col justify-center gap-[2vw] opacity-0 translate-x-[-100%] absolute top-0 left-0 z-[4] h-full w-[40%] bg-[#fefefe]"
+            class="whitediv3 flex px-[4.4vw] flex-col justify-center gap-[6vw] lg:gap-[2vw] opacity-0 translate-x-[-100%] absolute rounded top-[10%] lg:top-0 left-0 z-[4] h-[56%] lg:h-full w-[70%] lg:w-[40%] bg-[#fefefe]"
           >
             <div class="cardtitle">
-              <h1 class="text-4xl">PROXXON FF 500/BL CNC MILLING MACHINE</h1>
+              <h1 class="text-4xl lg:text-4xl">
+                PROXXON FF 500/BL CNC MILLING MACHINE
+              </h1>
             </div>
             <div class="carddesc">
-              <h3>
+              <h3 class="lg:text-lg text-sm">
                 The Proxxon FF 500 CNC is a high-precision milling machine ideal
                 for milling, drilling, and countersinking operations. Designed
                 for quiet, vibration-free performance, it offers a wide speed
@@ -172,13 +178,15 @@
             </div>
           </div>
           <div
-            class="whitediv4 flex px-[5vw] flex-col justify-center gap-[2vw] opacity-0 translate-x-[-100%] absolute top-0 left-0 z-[4] h-full w-[40%] bg-[#fefefe]"
+            class="whitediv4 flex px-[4.4vw] flex-col justify-center gap-[6vw] lg:gap-[2vw] opacity-0 translate-x-[-100%] absolute rounded top-[10%] lg:top-0 left-0 z-[4] h-[56%] lg:h-full w-[70%] lg:w-[40%] bg-[#fefefe]"
           >
             <div class="cardtitle">
-              <h1 class="text-4xl">PROXXON PD 400 CNC LATHE MACHINE</h1>
+              <h1 class="text-4xl lg:text-4xl">
+                PROXXON PD 400 CNC LATHE MACHINE
+              </h1>
             </div>
             <div class="carddesc">
-              <h3>
+              <h3 class="lg:text-lg text-sm">
                 The Proxxon PD 400 CNC is a precision lathe that automates
                 machining via software, enabling repeatable operations. It
                 handles tasks like turning, facing, drilling, taper-turning,
@@ -195,13 +203,13 @@
             </div>
           </div>
           <div
-            class="whitediv5 flex px-[5vw] flex-col justify-center gap-[2vw] opacity-0 translate-x-[-100%] absolute top-0 left-0 z-[4] h-full w-[40%] bg-[#fefefe]"
+            class="whitediv5 flex px-[4.4vw] flex-col justify-center gap-[6vw] lg:gap-[2vw] opacity-0 translate-x-[-100%] absolute rounded top-[10%] lg:top-0 left-0 z-[4] h-[50%] lg:h-full w-[70%] lg:w-[40%] bg-[#fefefe]"
           >
             <div class="cardtitle">
-              <h1 class="text-4xl">SRM-20 Milling Machine</h1>
+              <h1 class="text-4xl lg:text-4xl">SRM-20 Milling Machine</h1>
             </div>
             <div class="carddesc">
-              <h3>
+              <h3 class="lg:text-lg text-sm">
                 As a small milling machine, the SRM-20 offers compact size and
                 powerful functionality at an affordable price. Production of
                 realistic parts and prototypes is made simple and convenient
@@ -218,31 +226,40 @@
             </div>
           </div>
           <div
-            class="initialhomepage absolute flex items-center justify-center z-[3] bg-[#fefefe] top-0 left-0 h-screen w-full"
+            class="initialhomepage absolute flex items-center pl-[6vw] lg:pl-0 justify-start lg:justify-center z-[3] bg-[#fefefe] top-0 left-0 h-screen w-full"
           >
             <div
-              class="hometext flex flex-col items-center bg-[#fefefe] text-center rounded py-[3vw] h-fit w-[55%]"
+              class="hometext flex flex-col items-start lg:items-center bg-[#fefefe] text-start lg:text-center rounded py-[3vw] h-fit w-[90%] lg:w-[55%]"
             >
-              <h1 class="text-6xl tracking-[0.7vw] uppercase font-[sregular]">
+              <h1
+                class="text-5xl lg:text-6xl tracking-[0.7vw] uppercase font-[sregular]"
+              >
                 Makerspace Lab
               </h1>
-              <h2 class="w-[90%] mt-[1vw] leading-[1.4] text-balance text-xl">
+              <h2
+                class="w-[100%] lg:w-[90%] mt-[4vw] lg:mt-[1vw] leading-[1.4] text-balance text-xl lg:text-xl"
+              >
                 The Makerspace Lab at NIT Goa's Department of Mechanical
                 Engineering fosters innovation, providing advanced tools and
                 spaces to bring creative ideas to life.
               </h2>
+              <div
+                class="block lg:hidden cursor-pointer mt-[5vw] active:scale-[0.98] w-fit px-[4vw] hover:bg-black hover:text-white py-[1vw] border-black border-[2px]"
+              >
+                <h3 class="text-xl">More Info</h3>
+              </div>
             </div>
           </div>
           <div
             class="finalhomepage pointer-events-none opacity-0 absolute flex items-center justify-center z-[5] bg-[#fefefe] top-0 left-0 h-screen w-full"
           >
             <div
-              class="finalhometext flex flex-col items-center bg-[#fefefe] text-center rounded py-[3vw] h-fit w-[55%]"
+              class="finalhometext flex flex-col items-center bg-[#fefefe] text-center rounded py-[3vw] h-fit w-[85%] lg:w-[55%]"
             >
               <h1 class="text-6xl tracking-[0.7vw] uppercase font-[sregular]">
                 THANK YOU
               </h1>
-              <h2 class="w-[80%] mt-[1vw] leading-[1.4] text-balance text-xl">
+              <h2 class="w-[100%] lg:w-[80%] mt-[5vw] lg:mt-[1vw] leading-[1.4] text-balance text-lg lg:text-xl">
                 Hope you had a great experience! This lab is designed to help
                 NIT Goa students grow and turn their creative ideas into
                 reality.
