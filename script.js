@@ -464,6 +464,11 @@ const loadinganimation = () => {
   var tl2 = gsap.timeline();
 
   tl2
+    .to(".pleasewaittext", {
+      opacity: 0,
+      duration: 0.5,
+      ease: "linear",
+    })
     .from(".loaderplane", {
       opacity: 0,
       delay: 0.3,
